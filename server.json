@@ -1,0 +1,133 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.noahowsh/strikerapi",
+  "title": "StrikerAPI",
+  "description": "Premier League, MLS and European football: lineups, shot maps, xG, tables and odds. REST and MCP.",
+  "version": "1.1.4",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/noahowsh/strikerapi-mcp",
+    "source": "github"
+  },
+  "icons": [
+    {
+      "src": "https://github.com/noahowsh/strikerapi-mcp/raw/main/assets/logo-400x400.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "400x400"
+      ]
+    }
+  ],
+  "homepage": "https://strikerapi.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.strikerapi.com/mcp",
+      "headers": [
+        {
+          "name": "x-api-key",
+          "description": "Your StrikerAPI API key. Get a free key with 500 credits at strikerapi.com/signup",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ],
+  "tools": [
+    {
+      "name": "list_teams",
+      "description": "Club ids, abbreviations and colours for a season",
+      "readOnlyHint": true
+    },
+    {
+      "name": "search_players",
+      "description": "Find players by name",
+      "readOnlyHint": true
+    },
+    {
+      "name": "list_games",
+      "description": "Fixtures and results by season, stage, date, range or club",
+      "readOnlyHint": true
+    },
+    {
+      "name": "get_schedule",
+      "description": "Upcoming fixtures with the median three-way line across sportsbooks",
+      "readOnlyHint": true
+    },
+    {
+      "name": "get_standings",
+      "description": "The league table: points, deductions, goal difference, home and away, form",
+      "readOnlyHint": true
+    },
+    {
+      "name": "get_ratings",
+      "description": "Our club Elo ratings, ranked",
+      "readOnlyHint": true
+    },
+    {
+      "name": "get_head_to_head",
+      "description": "Two clubs' meetings: record, goals and every result",
+      "readOnlyHint": true
+    },
+    {
+      "name": "get_game",
+      "description": "One match: score, both box scores, every player's line, key events, each book's line",
+      "readOnlyHint": true
+    },
+    {
+      "name": "get_lineups",
+      "description": "Formations, starting XIs, benches and substitutions with minutes",
+      "readOnlyHint": true
+    },
+    {
+      "name": "get_player",
+      "description": "Profile, per-season totals and per-90 rates, last 10 matches",
+      "readOnlyHint": true
+    },
+    {
+      "name": "get_player_games",
+      "description": "A player's full match log",
+      "readOnlyHint": true
+    },
+    {
+      "name": "get_leaders",
+      "description": "Season leaders: goals, assists, shots, xG, cards, saves",
+      "readOnlyHint": true
+    },
+    {
+      "name": "get_team_stats",
+      "description": "Per-match averages: goals, xG, shots, possession, passing, discipline, for and against",
+      "readOnlyHint": true
+    },
+    {
+      "name": "get_odds",
+      "description": "Every sportsbook's three-way moneyline, goal handicap and total for a match (5) or a day (10), with results",
+      "readOnlyHint": true
+    },
+    {
+      "name": "get_events",
+      "description": "Match events: goals, cards, substitutions, shots with location and xG, fouls, corners",
+      "readOnlyHint": true
+    },
+    {
+      "name": "get_shot_map",
+      "description": "Shot map for a club, player or defence: every located shot with outcome and xG, plus zone totals",
+      "readOnlyHint": true
+    },
+    {
+      "name": "get_line_movement",
+      "description": "Snapshots of each sportsbook's line before kick-off",
+      "readOnlyHint": true
+    },
+    {
+      "name": "get_player_props",
+      "description": "Anytime goalscorer prices by sportsbook, opening and closing",
+      "readOnlyHint": true
+    },
+    {
+      "name": "get_prop_history",
+      "description": "A player's anytime goalscorer price against whether he scored, match by match",
+      "readOnlyHint": true
+    }
+  ]
+}
