@@ -1,5 +1,7 @@
 # StrikerAPI MCP server
 
+[![Smithery](https://img.shields.io/badge/Smithery-listed-ff5601?style=flat-square)](https://smithery.ai/servers/noahowsh/StrikerAPI) [![MCP Registry](https://img.shields.io/badge/MCP%20Registry-listed-0b7285?style=flat-square)](https://registry.modelcontextprotocol.io/v0/servers?search=io.github.noahowsh/strikerapi)
+
 **The soccer data API.** Results, lineups, box scores and match events for 17 competitions, from the Premier League, MLS, La Liga, Serie A, the Bundesliga, Ligue 1 and the Champions League to the EFL Championship, the NWSL, Liga MX, the Europa League, the Conference League, the Eredivisie, the Primeira Liga, the Scottish Premiership, Brazil's Serie A and Argentina's Liga Profesional, with the location of every charted shot, our own expected goals and Elo ratings, sportsbook lines and anytime goalscorer prices. REST API and MCP server. 500 free credits, no card.
 
 Website: https://strikerapi.com · Docs: https://strikerapi.com/docs · Get a key: https://strikerapi.com/signup
