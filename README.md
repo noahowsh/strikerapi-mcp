@@ -49,6 +49,21 @@ curl -X POST https://mcp.strikerapi.com/v1/list_teams -H "x-api-key: YOUR_API_KE
 
 Every tool is `POST /v1/{tool}` with a JSON body.
 
+## Examples
+
+Runnable Python (standard library only) and Node 18+ (no dependencies) examples live in [`examples/`](examples/):
+
+- [`examples/python/quickstart.py`](examples/python/quickstart.py) and [`examples/node/quickstart.mjs`](examples/node/quickstart.mjs): schedule plus a headline call.
+- [`examples/python/soccer_shot_map_xg.py`](examples/python/soccer_shot_map_xg.py): One match, two views.
+
+```bash
+export STRIKERAPI_API_KEY=your_key
+python3 examples/python/quickstart.py
+node examples/node/quickstart.mjs
+```
+
+See [`examples/README.md`](examples/README.md) for details. Get a free key (500 credits a month, no card) at https://strikerapi.com/signup.
+
 ## Tools (19)
 
 | Tool | What it returns |
