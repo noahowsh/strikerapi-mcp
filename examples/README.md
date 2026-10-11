@@ -1,6 +1,6 @@
 # StrikerAPI examples
 
-Runnable examples for the [StrikerAPI API](https://strikerapi.com). Python uses only the standard library (`urllib` and `json`). Node uses the built-in `fetch` (Node 18 or newer). No packages to install.
+Runnable examples for the [StrikerAPI](https://strikerapi.com). Python uses only the standard library (`urllib` and `json`). Node uses the built-in `fetch` (Node 18 or newer). No packages to install.
 
 Soccer data API with xG, shot maps and odds. Every tool is a REST call: `POST https://mcp.strikerapi.com/v1/<tool_name>` with a JSON body and an `x-api-key` header. The same tools are available over MCP at `https://mcp.strikerapi.com/mcp`.
 
