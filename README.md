@@ -2,7 +2,7 @@
 
 [![Smithery](https://img.shields.io/badge/Smithery-listed-ff5601?style=flat-square)](https://smithery.ai/servers/noahowsh/StrikerAPI) [![MCP Registry](https://img.shields.io/badge/MCP%20Registry-listed-0b7285?style=flat-square)](https://registry.modelcontextprotocol.io/v0/servers?search=io.github.noahowsh/strikerapi)
 
-**The soccer data API.** Results, lineups, box scores and match events for 17 competitions, from the Premier League, MLS, La Liga, Serie A, the Bundesliga, Ligue 1 and the Champions League to the EFL Championship, the NWSL, Liga MX, the Europa League, the Conference League, the Eredivisie, the Primeira Liga, the Scottish Premiership, Brazil's Serie A and Argentina's Liga Profesional, with the location of every charted shot, our own expected goals and Elo ratings, sportsbook lines and anytime goalscorer prices. REST API and MCP server. 500 free credits, no card.
+**The soccer data API.** Results, lineups, box scores and match events for 17 competitions, from the Premier League, MLS, La Liga, Serie A, the Bundesliga, Ligue 1 and the Champions League to the EFL Championship, the NWSL, Liga MX, the Europa League, the Conference League, the Eredivisie, the Primeira Liga, the Scottish Premiership, Brazil's Serie A and Argentina's Liga Profesional, with the location of every charted shot, our own expected goals and Elo ratings, sportsbook lines and anytime goalscorer prices. REST API and MCP server. 500 free credits every month, no card.
 
 Website: https://strikerapi.com · Docs: https://strikerapi.com/docs · Get a key: https://strikerapi.com/signup
 
@@ -16,6 +16,16 @@ Claude: [calls get_shot_map]
 You:    "What was Erling Haaland's anytime goalscorer price at each sportsbook before his last match?"
 Claude: [calls get_player_props]
 ```
+
+## Skills
+
+The [`skills/`](skills/) folder holds 16 Claude skills that turn Claude into a soccer analyst on top of these tools: match lookup, team and player analysis, odds comparison, xG and shot maps, Elo, Poisson and Dixon-Coles score models, three-way devigging, calibration, edge detection, backtesting and anytime goalscorer modeling. Each skill names the exact tools it calls and what they cost.
+
+```bash
+git clone https://github.com/noahowsh/strikerapi-mcp.git
+```
+
+Then point Claude at the `skills/` folder (for Claude Code, copy or symlink the folders into `~/.claude/skills/`) and connect the server below. Start with `dispatch` if you are unsure which skill to use. Full catalog: [`skills/README.md`](skills/README.md).
 
 ## Quick start
 
@@ -100,9 +110,21 @@ Leagues: soccer (default, Premier League), mls, laliga, seriea, bundesliga, ligu
 
 Coverage by season, read live from the database: https://strikerapi.com/docs
 
+## Useful pages
+
+- [Odds this week](https://strikerapi.com/odds): upcoming fixtures with the median three-way line
+- [Guides](https://strikerapi.com/guides): Python walk-throughs for xG tables, shot maps, Elo, top scorers and odds history
+- [Docs](https://strikerapi.com/docs): every tool, parameter and response, with coverage by season
+- [Data](https://strikerapi.com/data): shot data, match events, historical odds and goalscorer prices
+- [Pricing](https://strikerapi.com/pricing): free tier and plans
+- [vs API-Football](https://strikerapi.com/compare/api-football-alternative)
+- [vs football-data.org](https://strikerapi.com/compare/football-data-org-alternative)
+- [vs Sportmonks](https://strikerapi.com/compare/sportmonks-alternative)
+- [vs scraping FBref](https://strikerapi.com/compare/fbref-scraping)
+
 ## Pricing
 
-500 free credits on signup, no card. Plans: Starter $19/mo (10,000 credits), Pro $49/mo (30,000), Scale $149/mo (125,000). Wallet top-ups from $5, never expire. https://strikerapi.com/pricing
+500 free credits every month, no card. Plans: Starter $19/mo (10,000 credits), Pro $49/mo (30,000), Scale $149/mo (125,000). Wallet top-ups from $5, never expire. https://strikerapi.com/pricing
 
 ## Attribution
 
