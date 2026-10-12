@@ -1,0 +1,14 @@
+{
+  "name": "strikerapi",
+  "description": "Soccer analytics skills for Claude Code, wired to the StrikerAPI MCP server",
+  "owner": {
+    "name": "StrikerAPI"
+  },
+  "plugins": [
+    {
+      "name": "strikerapi-skills",
+      "source": "./",
+      "description": "16 soccer analytics and betting-model skills"
+    }
+  ]
+}

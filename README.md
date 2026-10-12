@@ -25,6 +25,15 @@ The [`skills/`](skills/) folder holds 16 Claude skills that turn Claude into a s
 git clone https://github.com/noahowsh/strikerapi-mcp.git
 ```
 
+Or install them as a Claude Code plugin:
+
+```
+/plugin marketplace add noahowsh/strikerapi-mcp
+/plugin install strikerapi-skills@strikerapi
+```
+
+Or with the skills CLI: `npx skills add noahowsh/strikerapi-mcp`.
+
 Then point Claude at the `skills/` folder (for Claude Code, copy or symlink the folders into `~/.claude/skills/`) and connect the server below. Start with `dispatch` if you are unsure which skill to use. Full catalog: [`skills/README.md`](skills/README.md).
 
 ## Quick start
