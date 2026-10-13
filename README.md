@@ -122,6 +122,7 @@ Coverage by season, read live from the database: https://strikerapi.com/docs
 ## Useful pages
 
 - [Odds this week](https://strikerapi.com/odds): upcoming fixtures with the median three-way line
+- [Goalscorer prices today](https://strikerapi.com/props): Premier League anytime goalscorer prices, best Yes and No per player across books
 - [Guides](https://strikerapi.com/guides): Python walk-throughs for xG tables, shot maps, Elo, top scorers and odds history
 - [Docs](https://strikerapi.com/docs): every tool, parameter and response, with coverage by season
 - [Data](https://strikerapi.com/data): shot data, match events, historical odds and goalscorer prices
