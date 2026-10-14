@@ -1,0 +1,14 @@
+{
+  "name": "strikerapi",
+  "version": "1.0.0",
+  "description": "StrikerAPI MCP server for soccer data: schedules, results, stats and odds.",
+  "contextFileName": "GEMINI.md",
+  "mcpServers": {
+    "strikerapi": {
+      "httpUrl": "https://mcp.strikerapi.com/mcp",
+      "headers": {
+        "x-api-key": "${STRIKERAPI_API_KEY}"
+      }
+    }
+  }
+}
