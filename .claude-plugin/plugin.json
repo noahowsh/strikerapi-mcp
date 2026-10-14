@@ -5,7 +5,22 @@
   "author": {
     "name": "StrikerAPI"
   },
-  "homepage": "https://strikerapi.com",
+  "homepage": "https://strikerapi.com/skills",
   "repository": "https://github.com/noahowsh/strikerapi-mcp",
-  "license": "MIT"
+  "license": "MIT",
+  "displayName": "StrikerAPI Skills",
+  "documentationUrl": "https://strikerapi.com/docs",
+  "privacyPolicyUrl": "https://strikerapi.com/privacy",
+  "termsOfServiceUrl": "https://strikerapi.com/terms",
+  "supportUrl": "mailto:support@strikerapi.com",
+  "keywords": [
+    "soccer",
+    "premier-league",
+    "sports-analytics",
+    "sports-betting",
+    "sports-data",
+    "odds",
+    "backtesting",
+    "strikerapi"
+  ]
 }
