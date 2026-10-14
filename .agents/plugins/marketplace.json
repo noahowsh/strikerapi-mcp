@@ -1,0 +1,20 @@
+{
+  "name": "strikerapi",
+  "interface": {
+    "displayName": "StrikerAPI Skills"
+  },
+  "plugins": [
+    {
+      "name": "strikerapi-skills",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}

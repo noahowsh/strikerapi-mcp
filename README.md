@@ -143,3 +143,28 @@ Soccer data from public ESPN data; sportsbook lines and goalscorer prices from E
 ## License
 
 MIT for the contents of this repository. Data terms as above.
+
+## Use with Codex
+
+Add this repo as a Codex plugin marketplace, then install the plugin:
+
+```bash
+codex plugin marketplace add noahowsh/strikerapi-mcp
+```
+
+Then open the plugin directory in Codex and install `strikerapi-skills` from the `strikerapi` marketplace. The plugin bundles the skills in `skills/` and the StrikerAPI MCP server (https://mcp.strikerapi.com/mcp). Set your key first (free at https://strikerapi.com/signup):
+
+```bash
+export STRIKERAPI_API_KEY=your_key
+```
+
+Codex sends it as a bearer token.
+
+## Use with Gemini CLI
+
+```bash
+export STRIKERAPI_API_KEY=your_key
+gemini extensions install https://github.com/noahowsh/strikerapi-mcp
+```
+
+The extension adds the StrikerAPI MCP server (https://mcp.strikerapi.com/mcp) and sends the key in the `x-api-key` header. Get a free key (500 credits a month) at https://strikerapi.com/signup.
