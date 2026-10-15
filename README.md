@@ -36,6 +36,27 @@ Or with the skills CLI: `npx skills add noahowsh/strikerapi-mcp`.
 
 Then point Claude at the `skills/` folder (for Claude Code, copy or symlink the folders into `~/.claude/skills/`) and connect the server below. Start with `dispatch` if you are unsure which skill to use. Full catalog: [`skills/README.md`](skills/README.md).
 
+## Python
+
+The official Python client is on PyPI: [strikerapi](https://pypi.org/project/strikerapi/).
+
+```bash
+pip install strikerapi
+export STRIKERAPI_API_KEY=sk_live_...
+```
+
+```python
+from strikerapi import Client, to_dataframe
+
+client = Client()
+
+table = client.get_standings(league="mls")
+df = to_dataframe(table, key="standings")
+print(df[["group_name", "rank", "display_name", "played", "points"]].head(10))
+```
+
+Typed errors for a bad key, no credits left, not found and rate limits, automatic retries, and `to_dataframe` for pandas.
+
 ## Quick start
 
 This is a hosted (remote) MCP server over Streamable HTTP. There is nothing to install.
