@@ -17,6 +17,22 @@ You:    "What was Erling Haaland's anytime goalscorer price at each sportsbook b
 Claude: [calls get_player_props]
 ```
 
+
+## Run it locally (stdio)
+
+Most clients connect to `https://mcp.strikerapi.com/mcp` directly. For a client that launches a local process instead:
+
+```bash
+git clone https://github.com/noahowsh/strikerapi-mcp.git && cd strikerapi-mcp && npm install
+STRIKERAPI_API_KEY=your_key node index.js
+```
+
+```json
+{ "mcpServers": { "strikerapi": { "command": "node", "args": ["/path/to/strikerapi-mcp/index.js"], "env": { "STRIKERAPI_API_KEY": "your_key" } } } }
+```
+
+It forwards to the hosted server with your key, so every tool and credit cost is the same.
+
 ## Skills
 
 The [`skills/`](skills/) folder holds 16 Claude skills that turn Claude into a soccer analyst on top of these tools: match lookup, team and player analysis, odds comparison, xG and shot maps, Elo, Poisson and Dixon-Coles score models, three-way devigging, calibration, edge detection, backtesting and anytime goalscorer modeling. Each skill names the exact tools it calls and what they cost.
