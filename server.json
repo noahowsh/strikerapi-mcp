@@ -26,7 +26,7 @@
       "headers": [
         {
           "name": "x-api-key",
-          "description": "Your StrikerAPI API key. Get a free key with 500 credits at strikerapi.com/signup",
+          "description": "Your StrikerAPI API key. Get a free key (500 credits every month) at strikerapi.com/signup",
           "isRequired": true,
           "isSecret": true
         }
