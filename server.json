@@ -3,7 +3,7 @@
   "name": "io.github.noahowsh/strikerapi",
   "title": "StrikerAPI",
   "description": "Premier League, MLS and European football: lineups, shot maps, xG, tables and odds. REST and MCP.",
-  "version": "1.1.4",
+  "version": "1.1.6",
   "license": "MIT",
   "repository": {
     "url": "https://github.com/noahowsh/strikerapi-mcp",

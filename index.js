@@ -16,7 +16,7 @@ if (!API_KEY) {
 }
 const URL_ = process.env.STRIKERAPI_MCP_URL || "https://mcp.strikerapi.com/mcp";
 
-const client = new Client({ name: "strikerapi-stdio", version: "1.0.0" });
+const client = new Client({ name: "strikerapi-stdio", version: "1.1.6" });
 try {
   await client.connect(new StreamableHTTPClientTransport(new URL(URL_), { requestInit: { headers: { "x-api-key": API_KEY } } }));
 } catch (err) {
@@ -27,7 +27,7 @@ try {
   process.exit(1);
 }
 
-const server = new Server({ name: "strikerapi", version: "1.0.0" }, { capabilities: { tools: {} } });
+const server = new Server({ name: "strikerapi", version: "1.1.6" }, { capabilities: { tools: {} } });
 server.setRequestHandler(ListToolsRequestSchema, async () => client.listTools());
 server.setRequestHandler(CallToolRequestSchema, async (request) =>
   client.callTool({ name: request.params.name, arguments: request.params.arguments }),
