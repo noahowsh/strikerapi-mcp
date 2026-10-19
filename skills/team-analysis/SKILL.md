@@ -102,7 +102,7 @@ The early-season table is a different read: `get_standings` with no season (2026
 | `form` | Most recent results as letters, e.g. `WLWWW` |
 | `possession_pct`, `pass_accuracy_pct` | Style descriptors, weakly related to results. Do not rank clubs by them |
 | `red_cards_total` | Total red cards, not a per-match rate |
-| any stat `null` | ESPN did not chart it. It is not 0 |
+| any stat `null` | It was not charted. It is not 0 |
 
 `get_team_stats` averages cover every final match in the season for the competition you query, "league and cup stages alike". In the Champions League that means group and knockout matches together. Other competitions are not included: a club's Premier League numbers do not contain its Champions League matches.
 

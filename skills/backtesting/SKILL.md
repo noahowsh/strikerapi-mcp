@@ -46,17 +46,17 @@ A backtest answers one question: if I had followed this rule using only informat
 
 ## What the Data Holds
 
-From the StrikerAPI docs: sportsbook lines from 2017-18, with the densest coverage (about ten books a match) in 2021-22 to 2023-24 and one or two books since; opening and closing lines from The Odds API since June 2020 for 16 competitions; ESPN's lines from 2024, and ESPN's final pre-match line before that. Read the per-season counts at https://strikerapi.com/docs before designing the test.
+From the StrikerAPI docs: sportsbook lines from 2017-18, with the densest coverage (about ten books a match) in 2021-22 to 2023-24 and one or two books since; opening and closing lines since June 2020 for 16 competitions; a final pre-match line before that. Read the per-season counts at https://strikerapi.com/docs before designing the test.
 
 Check these before trusting a run:
 
 | Check | Why |
 |-------|-----|
-| `source` per row (`the_odds_api` or `espn`) | Only Odds API rows carry open and close. ESPN rows often have `null` opens |
+| `source` per row (`archive`, `final` or `extended`) | Only `archive` rows carry open and close. `final` rows often have `null` opens |
 | Number of books per match | A season with one or two books cannot support a "best price" rule |
-| `null` handicap and total | Most Odds API rows have none; Pinnacle often does |
+| `null` handicap and total | Most `archive` rows have none; Pinnacle often does |
 | Priced matches versus played | Arsenal's 2025-26 `get_odds` returned `count: 27`, not 38. Not every match is priced |
-| `captured_at` | Not a kickoff time for ESPN backfills |
+| `captured_at` | Not a kickoff time for `final` backfills |
 
 ## Cost the Pull First
 
@@ -160,7 +160,7 @@ Three bets tell you nothing about the rule. They show how the settlement and CLV
 3. **Best price across books.** If a season has one or two books, there is no "best price". Where there are many, assume you get the median, not the best, unless you actually shop.
 4. **Account limits.** Sharp bettors get limited. A backtest at unlimited size overstates what you could do.
 5. **Selection bias.** Trying 30 thresholds and reporting the best is a fit to noise. Fix the rule first, or hold out a final season.
-6. **Mixed sources.** Don't average ESPN and Odds API rows of different timing. Say which you used.
+6. **Mixed sources.** Don't average `final` and `archive` rows of different timing. Say which you used.
 7. **Void and abandoned matches.** Exclude with a count.
 8. **Survivorship of data.** The priced matches are not a random sample of all matches. State the coverage.
 9. **Stakes.** Flat-stake results are the honest baseline; staking by edge or Kelly compounds noise.

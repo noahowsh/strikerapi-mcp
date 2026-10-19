@@ -49,7 +49,7 @@ You find the right player, then judge him on rates and minutes rather than raw t
 
 ## How It Works
 
-**Step 1: Get the id.** `get_player` takes an ESPN player id, not a name.
+**Step 1: Get the id.** `get_player` takes a player id, not a name.
 
 ```
 search_players {"name": "Haaland"}

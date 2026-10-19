@@ -55,11 +55,11 @@ Moneylines are American odds. A home price of `+290` risks 100 to win 290. A pri
 
 | Field | Meaning |
 |-------|---------|
-| `provider`, `source` | Book name; `the_odds_api` or `espn` |
-| `home_ml_open`, `home_ml_close` (and `draw_`, `away_`) | Opening and closing moneyline. ESPN rows often have `null` opens |
+| `provider`, `source` | Book name; `archive`, `final` or `extended` |
+| `home_ml_open`, `home_ml_close` (and `draw_`, `away_`) | Opening and closing moneyline. `final` rows often have `null` opens |
 | `close_prob` | No-margin home, draw and away probabilities plus `overround` |
-| `home_handicap_*`, `total_*`, `over_odds`, `under_odds` | Goal handicap and total where posted. Many Odds API rows have `null` here |
-| `captured_at` | When the row was captured. For ESPN rows on old matches it can be well after the match, so it is not a kickoff timestamp |
+| `home_handicap_*`, `total_*`, `over_odds`, `under_odds` | Goal handicap and total where posted. Many `archive` rows have `null` here |
+| `captured_at` | When the row was captured. For `final` rows on old matches it can be well after the match, so it is not a kickoff timestamp |
 
 For a finished match there is also `outcome`: `result` (`H`, `D`, `A`), `median_total`, `median_home_handicap`, `over`, `home_covered`.
 
@@ -86,7 +86,7 @@ Betting exchanges and Pinnacle typically run far below high-street books. `close
 
 **Step 5: Clean the rows before ranking.** Drop or flag a book whose three prices sum to less than 100% (negative overround) or far above 115%. Exchange snapshots in thin markets produce nonsense. In one line-movement pull, an exchange row early in the series read `-323 / -1000 / -323`, which is not a real market.
 
-**Step 6: Movement.** `get_line_movement` returns snapshots per book. ESPN lines are captured once a day, The Odds API lines hourly for matches in the next two days, so a quiet series is not necessarily a quiet market.
+**Step 6: Movement.** `get_line_movement` returns snapshots per book. Lines are captured once a day, and hourly for matches in the next two days, so a quiet series is not necessarily a quiet market.
 
 ```
 get_line_movement {"game_id": "401879267"}
@@ -101,7 +101,7 @@ Crystal Palace vs Arsenal, closing lines from `get_odds {"game_id": "740968"}` (
 ```
 book              home    draw    away    overround
 888sport          +290    +250    -118     8.3%
-Bet 365 (espn)    +310    +260    -118     6.3%
+Bet 365 (final)   +310    +260    -118     6.3%
 Betfair Exchange  +330    +290    -106     0.4%
 DraftKings        +300    +270    -110     4.4%
 FanDuel           +320    +260    -115     5.1%
@@ -131,7 +131,7 @@ Do not treat movement as a bet signal by itself. The closing line is the best pu
 |----------------|---------------|-----------------|
 | "Compare home and away only" | The draw holds about a quarter of the probability | Always show all three |
 | "Best price at one book for all three" | Best prices sit at different books | Choose per outcome |
-| "Pinnacle open to close is a steady line" | Compare `source`: ESPN and Odds API rows differ in timing | Report the source with each number |
+| "Pinnacle open to close is a steady line" | Compare `source`: `final` and `archive` rows differ in timing | Report the source with each number |
 | "Trust any row" | Thin exchange snapshots can be garbage | Sanity check overround |
 | "Median across books is a real line" | Medians such as `2.88` or `0.13` are not postable lines | Use them for comparison, not as a bet |
 

@@ -74,7 +74,7 @@ list_games {"team": "ARS", "season": 2025, "status": "final", "limit": 5}
 | Shots with location | `get_events` with `kind: "shots"` or `get_shot_map` with `game_id` |
 | Formation and subs | `get_lineups` |
 
-**Step 4: Read the box score honestly.** `get_game` returns `team_stats` with `goals`, `xg`, `possession_pct`, `shots`, `shots_on_target`, `corners`, `fouls`, cards, `passes`, `tackles` and `penalty_goals`. A stat ESPN did not chart is `null`, never 0. xG is StrikerAPI's own, computed from located shots, and is `null` for seasons without located shots.
+**Step 4: Read the box score honestly.** `get_game` returns `team_stats` with `goals`, `xg`, `possession_pct`, `shots`, `shots_on_target`, `corners`, `fouls`, cards, `passes`, `tackles` and `penalty_goals`. A stat that was not charted is `null`, never 0. xG is StrikerAPI's own, computed from located shots, and is `null` for seasons without located shots.
 
 ## Worked Example
 
@@ -113,7 +113,7 @@ For the goals, `get_events {"game_id": "740968", "kind": "goals"}` returns three
 |----------------|---------------|-----------------|
 | "Loop `get_game` over the season for scores" | 5 credits each; `list_games` returns 200 scores for 2 | Use `list_games` and open only the matches you need |
 | "Use `get_events` to get the final score" | 10 credits for data already in the list | Read `result` and the scores from `list_games` |
-| "Guess the game_id from a URL" | Ids are ESPN match ids per competition | Look it up with `list_games` or `get_schedule` |
+| "Guess the game_id from a URL" | Ids are match ids per competition | Look it up with `list_games` or `get_schedule` |
 | "Call a null xG zero" | Null means no located shots, not a blank attack | Report it as not available |
 
 ## Output Format

@@ -49,4 +49,4 @@ Free tier: 500 credits every month, no card. Keys at https://strikerapi.com/sign
 
 Typical costs: a match box score 5, a league xG table 5, a one-match preview about 20, a season of closing prices for one league 2 credits per match (760 for 380 matches). Skills state the cost before any loop.
 
-Data: soccer data from public ESPN data; sportsbook lines and goalscorer prices from ESPN and The Odds API; expected goals and ratings are StrikerAPI's own. Not affiliated with any league, club or federation. MIT licensed.
+Data: expected goals and ratings are StrikerAPI's own. Not affiliated with any league, club or federation. MIT licensed.

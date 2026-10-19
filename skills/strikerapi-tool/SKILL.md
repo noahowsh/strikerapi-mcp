@@ -83,7 +83,7 @@ Exceptions worth remembering: `get_standings` does not accept `ligamx` or `argen
 ## Coverage (from the StrikerAPI docs and README, check https://strikerapi.com/docs for the per-season counts)
 
 - Results, lineups and goals from 2001-02 for the longest-covered leagues; shot locations and our xG from 2012-13. Start years differ by competition.
-- Sportsbook lines from 2017-18, densest from 2021-22 to 2023-24. Opening and closing lines from The Odds API since June 2020 for 16 competitions, ESPN's lines from 2024.
+- Sportsbook lines from 2017-18, densest from 2021-22 to 2023-24. Opening and closing lines since June 2020 for 16 competitions.
 - Anytime goalscorer prices for seven competitions: Premier League and MLS from April 2024, Ligue 1 from May 2024, La Liga, Serie A and Bundesliga from August 2024, Champions League from March 2025. Mostly DraftKings and FanDuel. No other player market exists.
 - Older matches carry goals, cards and substitutions only in `get_events`. Shots, fouls and corners come later.
 

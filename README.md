@@ -151,7 +151,7 @@ Leagues: soccer (default, Premier League), mls, laliga, seriea, bundesliga, ligu
 - Seventeen competitions through the same 19 tools: Premier League, MLS, La Liga, Serie A, Bundesliga, Ligue 1, Champions League, EFL Championship, NWSL, Liga MX, Europa League, Conference League, Eredivisie, Primeira Liga, Scottish Premiership, Brazil's Serie A and Argentina's Liga Profesional
 - Results, lineups and goals from 2001-02 and shot locations from 2012-13 for the longest-covered leagues (start years differ by competition; coverage by season is on the docs page)
 - League tables with deductions, goal difference, home and away and form; club Elo ratings; head to head
-- Per-sportsbook three-way moneylines, goal handicaps and totals from 2017-18, densest (about ten books a match) from 2021-22 to 2023-24, one or two books since, plus opening and closing lines from The Odds API since June 2020 for 16 competitions; pre-match line snapshots from launch: ESPN's once a day, The Odds API's every hour for matches in the next two days
+- Per-sportsbook three-way moneylines, goal handicaps and totals from 2017-18, densest (about ten books a match) from 2021-22 to 2023-24, one or two books since, plus opening and closing lines since June 2020 for 16 competitions; pre-match line snapshots from launch: once a day, and every hour for matches in the next two days
 - Anytime goalscorer prices by sportsbook (the Yes price, and No where a book posts it; no other player market) for seven competitions: the Premier League and MLS from April 2024, Ligue 1 from May 2024, La Liga, Serie A and the Bundesliga from August 2024 and the Champions League from March 2025, from DraftKings and FanDuel with Pinnacle and William Hill on some matches in 2026; none for the other ten competitions
 
 Coverage by season, read live from the database: https://strikerapi.com/docs
@@ -175,7 +175,7 @@ Coverage by season, read live from the database: https://strikerapi.com/docs
 
 ## Attribution
 
-Soccer data from public ESPN data; sportsbook lines and goalscorer prices from ESPN and The Odds API. Expected goals and ratings are ours. Not affiliated with any league, club or federation.
+Expected goals and ratings are ours. Not affiliated with any league, club or federation.
 
 ## License
 

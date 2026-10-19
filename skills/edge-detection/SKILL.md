@@ -142,7 +142,7 @@ Report average CLV over at least 100 bets with a standard error. Positive averag
 2. **Stale prices.** A soft book lagging the market gives a price you cannot get at size. Check `captured_at` and the source.
 3. **Margin ignored.** Compare against the devigged fair probability for edge, and against the raw price for EV.
 4. **Betting the draw because it is "undervalued".** Test calibration of your draw probability first. It is the weakest part of most models.
-5. **Handicap and total prices.** Many Odds API rows have no handicap or total. Only price a total from a book that posted one.
+5. **Handicap and total prices.** Many `archive` rows have no handicap or total. Only price a total from a book that posted one.
 6. **Overbetting Kelly.** Fractional Kelly and a stake cap, always.
 7. **Selection bias.** Scanning 200 matches for the biggest disagreement selects for model error. Out-of-sample testing over the whole scan is the check.
 8. **No promises.** Past performance of a method does not predict returns. Present edges as estimates and state the variance.

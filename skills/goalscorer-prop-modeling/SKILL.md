@@ -66,7 +66,7 @@ Daniel Munoz       fanduel     650        null
 Christian Norgaard draftkings  900        null
 ```
 
-`over_odds` is the Yes price, an American price. `under_odds` is the No price where a book posts it; in this match it was `null` for every row. `line` is `null` because the market has no line. `source` was `the_odds_api`.
+`over_odds` is the Yes price, an American price. `under_odds` is the No price where a book posts it; in this match it was `null` for every row. `line` is `null` because the market has no line. `source` was `archive`.
 
 `get_prop_history` rows add `actual` (goals), `result` and `books`. For Haaland (`player_id` 253989) from April 2024, five rows:
 

@@ -11,7 +11,7 @@ metadata:
 > **Default data tool:** StrikerAPI (`strikerapi-tool`).
 > `get_shot_map` (10 credits) for located shots with xG. `get_team_stats` (5) for season xG for and against, all clubs in one call. `get_leaders` with `stat` set to `xg` (5) for player rankings. `get_events` with `kind: "shots"` (10) for one match in event order.
 
-Expected goals (xG) gives each shot a probability of being a goal from where it was taken, with what body part, and in what situation. Summed over a match or a season it describes the chances a team created and allowed, which is a steadier signal than the scoreline. The xG in StrikerAPI is our own, computed from ESPN-charted located shots from 2012-13 where located shots exist, and it is `null` where they do not.
+Expected goals (xG) gives each shot a probability of being a goal from where it was taken, with what body part, and in what situation. Summed over a match or a season it describes the chances a team created and allowed, which is a steadier signal than the scoreline. The xG in StrikerAPI is our own, computed from located shots from 2012-13 where located shots exist, and it is `null` where they do not.
 
 ## When to Use
 
