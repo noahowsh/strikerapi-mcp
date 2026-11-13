@@ -21,13 +21,13 @@ Every other skill in this pack gets its data here. This skill owns the 19 tools,
 Every REST response is wrapped as `{"data": ...}`. Unwrap it before reading fields. Over MCP the tool result carries the same payload.
 
 ```python
-import os, requests
+import requests
 
 def call(tool, **args):
     r = requests.post(
         f"https://mcp.strikerapi.com/v1/{tool}",
         json=args,
-        headers={"x-api-key": os.environ["STRIKERAPI_API_KEY"]},
+        headers={"x-api-key": "YOUR_API_KEY"},
         timeout=30,
     )
     r.raise_for_status()
