@@ -120,12 +120,21 @@ node examples/node/quickstart.mjs
 
 See [`examples/README.md`](examples/README.md) for details. Get a free key (500 credits a month, no card) at https://strikerapi.com/signup.
 
-## Tools (19)
+## Use it in
+
+- **Claude, ChatGPT, Cursor, VS Code, Gemini CLI, Grok, Perplexity, Le Chat:** add `https://mcp.strikerapi.com/mcp` as a remote MCP server. Step-by-step for each: https://strikerapi.com/mcp
+- **Gemini CLI:** `gemini extensions install https://github.com/noahowsh/strikerapi-mcp`
+- **Cursor:** the [SportsDataHQ plugins for Cursor](https://github.com/noahowsh/sportsdatahq-cursor-plugins)
+- **Google Sheets:** `=SDHQ("strikerapi","list_teams")` fills a live table: https://sportsdatahq.com/sheets
+- **REST:** `POST https://mcp.strikerapi.com/v1/<tool>` with an `x-api-key` header: https://strikerapi.com/docs
+
+## Tools (25)
 
 | Tool | What it returns |
 |------|-----------------|
 | `list_teams` | Club ids, abbreviations and colours for a season |
 | `search_players` | Find players by name |
+| `get_squad` | A club's current squad (2) or the whole league's (10): every registered player with position, shirt number and age |
 | `list_games` | Fixtures and results by season, stage, date, range or club |
 | `get_schedule` | Upcoming fixtures with the median three-way line across sportsbooks |
 | `get_standings` | The league table: points, deductions, goal difference, home and away, form |
@@ -136,13 +145,18 @@ See [`examples/README.md`](examples/README.md) for details. Get a free key (500 
 | `get_player` | Profile, per-season totals and per-90 rates, last 10 matches |
 | `get_player_games` | A player's full match log |
 | `get_leaders` | Season leaders: goals, assists, shots, xG, cards, saves |
-| `get_team_stats` | Per-match averages: goals, xG, shots, possession, passing, discipline, for and against |
+| `get_team_stats` | Per-match averages: goals, xG, shots, possession (missing for some leagues and seasons), passing, discipline, for and against |
 | `get_odds` | Every sportsbook's three-way moneyline, goal handicap and total for a match (5) or a day (10), with results |
 | `get_events` | Match events: goals, cards, substitutions, shots with location and xG, fouls, corners |
 | `get_shot_map` | Shot map for a club, player or defence: every located shot with outcome and xG, plus zone totals |
 | `get_line_movement` | Snapshots of each sportsbook's line before kick-off |
-| `get_player_props` | Anytime goalscorer prices by sportsbook, opening and closing |
-| `get_prop_history` | A player's anytime goalscorer price against whether he scored, match by match |
+| `get_player_props` | Anytime, first and last goalscorer, to be carded, shots, shots on target and assists prices by sportsbook |
+| `get_prop_history` | A player's prop price against what he did, match by match |
+| `get_prop_movement` | How one player's prop line moved before a game, every capture by sportsbook |
+| `get_market_odds` | Opening and closing lines by sportsbook for both teams to score, draw no bet, double chance and the first half (history from May 2023) |
+| `get_game_probabilities` | What the market thinks of a game: average implied and fair probability for the result (home, draw, away), handicaps and totals |
+| `get_prop_probabilities` | What the market thinks of a game's player props: average implied and fair probability for each player and line |
+| `get_prop_backtest` | How often a kind of player prop hit against what the market implied, by your filters, since 2024 |
 
 Leagues: soccer (default, Premier League), mls, laliga, seriea, bundesliga, ligue1, ucl, championship, nwsl, ligamx, uel, uecl, eredivisie, primeira, scotland, brazil, argentina (pass `league` to any tool).
 
