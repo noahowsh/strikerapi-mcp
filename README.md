@@ -4,7 +4,7 @@
 
 **The soccer data API.** Results, lineups, box scores and match events for 17 competitions, from the Premier League, MLS, La Liga, Serie A, the Bundesliga, Ligue 1 and the Champions League to the EFL Championship, the NWSL, Liga MX, the Europa League, the Conference League, the Eredivisie, the Primeira Liga, the Scottish Premiership, Brazil's Serie A and Argentina's Liga Profesional, with the location of every charted shot, our own expected goals and Elo ratings, sportsbook lines and anytime goalscorer prices. REST API and MCP server. 500 free credits every month, no card.
 
-Website: https://strikerapi.com · Docs: https://strikerapi.com/docs · Get a key: https://strikerapi.com/signup
+Website: https://strikerapi.com?utm_source=github&utm_medium=readme&utm_campaign=strikerapi-mcp · Docs: https://strikerapi.com/docs?utm_source=github&utm_medium=readme&utm_campaign=strikerapi-mcp · Get a key: https://strikerapi.com/signup?utm_source=github&utm_medium=readme&utm_campaign=strikerapi-mcp
 
 ```
 You:    "Which Premier League teams allowed the most xG from set pieces last season?"
@@ -118,15 +118,15 @@ python3 examples/python/quickstart.py
 node examples/node/quickstart.mjs
 ```
 
-See [`examples/README.md`](examples/README.md) for details. Get a free key (500 credits a month, no card) at https://strikerapi.com/signup.
+See [`examples/README.md`](examples/README.md) for details. Get a free key (500 credits a month, no card) at https://strikerapi.com/signup.?utm_source=github&utm_medium=readme&utm_campaign=strikerapi-mcp
 
 ## Use it in
 
-- **Claude, ChatGPT, Cursor, VS Code, Gemini CLI, Grok, Perplexity, Le Chat:** add `https://mcp.strikerapi.com/mcp` as a remote MCP server. Step-by-step for each: https://strikerapi.com/mcp
+- **Claude, ChatGPT, Cursor, VS Code, Gemini CLI, Grok, Perplexity, Le Chat:** add `https://mcp.strikerapi.com/mcp` as a remote MCP server. Step-by-step for each: https://strikerapi.com/mcp?utm_source=github&utm_medium=readme&utm_campaign=strikerapi-mcp
 - **Gemini CLI:** `gemini extensions install https://github.com/noahowsh/strikerapi-mcp`
 - **Cursor:** the [SportsDataHQ plugins for Cursor](https://github.com/noahowsh/sportsdatahq-cursor-plugins)
-- **Google Sheets:** `=SDHQ("strikerapi","list_teams")` fills a live table: https://sportsdatahq.com/sheets
-- **REST:** `POST https://mcp.strikerapi.com/v1/<tool>` with an `x-api-key` header: https://strikerapi.com/docs
+- **Google Sheets:** `=SDHQ("strikerapi","list_teams")` fills a live table: https://sportsdatahq.com/sheets?utm_source=github&utm_medium=readme&utm_campaign=strikerapi-mcp
+- **REST:** `POST https://mcp.strikerapi.com/v1/<tool>` with an `x-api-key` header: https://strikerapi.com/docs?utm_source=github&utm_medium=readme&utm_campaign=strikerapi-mcp
 
 ## Tools (25)
 
@@ -168,24 +168,24 @@ Leagues: soccer (default, Premier League), mls, laliga, seriea, bundesliga, ligu
 - Per-sportsbook three-way moneylines, goal handicaps and totals from 2017-18, densest (about ten books a match) from 2021-22 to 2023-24, one or two books since, plus opening and closing lines since June 2020 for 16 competitions; pre-match line snapshots from launch: once a day, and every hour for matches in the next two days
 - Anytime goalscorer prices by sportsbook (the Yes price, and No where a book posts it; no other player market) for seven competitions: the Premier League and MLS from April 2024, Ligue 1 from May 2024, La Liga, Serie A and the Bundesliga from August 2024 and the Champions League from March 2025, from DraftKings and FanDuel with Pinnacle and William Hill on some matches in 2026; none for the other ten competitions
 
-Coverage by season, read live from the database: https://strikerapi.com/docs
+Coverage by season, read live from the database: https://strikerapi.com/docs?utm_source=github&utm_medium=readme&utm_campaign=strikerapi-mcp
 
 ## Useful pages
 
-- [Odds this week](https://strikerapi.com/odds): upcoming fixtures with the median three-way line
-- [Goalscorer prices today](https://strikerapi.com/props): Premier League anytime goalscorer prices, best Yes and No per player across books
-- [Guides](https://strikerapi.com/guides): Python walk-throughs for xG tables, shot maps, Elo, top scorers and odds history
-- [Docs](https://strikerapi.com/docs): every tool, parameter and response, with coverage by season
-- [Data](https://strikerapi.com/data): shot data, match events, historical odds and goalscorer prices
-- [Pricing](https://strikerapi.com/pricing): free tier and plans
-- [vs API-Football](https://strikerapi.com/compare/api-football-alternative)
-- [vs football-data.org](https://strikerapi.com/compare/football-data-org-alternative)
-- [vs Sportmonks](https://strikerapi.com/compare/sportmonks-alternative)
-- [vs scraping FBref](https://strikerapi.com/compare/fbref-scraping)
+- [Odds this week](https://strikerapi.com/odds?utm_source=github&utm_medium=readme&utm_campaign=strikerapi-mcp): upcoming fixtures with the median three-way line
+- [Goalscorer prices today](https://strikerapi.com/props?utm_source=github&utm_medium=readme&utm_campaign=strikerapi-mcp): Premier League anytime goalscorer prices, best Yes and No per player across books
+- [Guides](https://strikerapi.com/guides?utm_source=github&utm_medium=readme&utm_campaign=strikerapi-mcp): Python walk-throughs for xG tables, shot maps, Elo, top scorers and odds history
+- [Docs](https://strikerapi.com/docs?utm_source=github&utm_medium=readme&utm_campaign=strikerapi-mcp): every tool, parameter and response, with coverage by season
+- [Data](https://strikerapi.com/data?utm_source=github&utm_medium=readme&utm_campaign=strikerapi-mcp): shot data, match events, historical odds and goalscorer prices
+- [Pricing](https://strikerapi.com/pricing?utm_source=github&utm_medium=readme&utm_campaign=strikerapi-mcp): free tier and plans
+- [vs API-Football](https://strikerapi.com/compare/api-football-alternative?utm_source=github&utm_medium=readme&utm_campaign=strikerapi-mcp)
+- [vs football-data.org](https://strikerapi.com/compare/football-data-org-alternative?utm_source=github&utm_medium=readme&utm_campaign=strikerapi-mcp)
+- [vs Sportmonks](https://strikerapi.com/compare/sportmonks-alternative?utm_source=github&utm_medium=readme&utm_campaign=strikerapi-mcp)
+- [vs scraping FBref](https://strikerapi.com/compare/fbref-scraping?utm_source=github&utm_medium=readme&utm_campaign=strikerapi-mcp)
 
 ## Pricing
 
-500 free credits every month, no card. Plans: Starter $19/mo (10,000 credits), Pro $49/mo (30,000), Scale $149/mo (125,000). Wallet top-ups from $5, never expire. https://strikerapi.com/pricing
+500 free credits every month, no card. Plans: Starter $19/mo (10,000 credits), Pro $49/mo (30,000), Scale $149/mo (125,000). Wallet top-ups from $5, never expire. https://strikerapi.com/pricing?utm_source=github&utm_medium=readme&utm_campaign=strikerapi-mcp
 
 ## Attribution
 
@@ -203,7 +203,7 @@ Add this repo as a Codex plugin marketplace, then install the plugin:
 codex plugin marketplace add noahowsh/strikerapi-mcp
 ```
 
-Then open the plugin directory in Codex and install `strikerapi-skills` from the `strikerapi` marketplace. The plugin bundles the skills in `skills/` and the StrikerAPI MCP server (https://mcp.strikerapi.com/mcp). Set your key first (free at https://strikerapi.com/signup):
+Then open the plugin directory in Codex and install `strikerapi-skills` from the `strikerapi` marketplace. The plugin bundles the skills in `skills/` and the StrikerAPI MCP server (https://mcp.strikerapi.com/mcp). Set your key first (free at https://strikerapi.com/signup?utm_source=github&utm_medium=readme&utm_campaign=strikerapi-mcp):
 
 ```bash
 export STRIKERAPI_API_KEY=your_key
@@ -218,4 +218,4 @@ export STRIKERAPI_API_KEY=your_key
 gemini extensions install https://github.com/noahowsh/strikerapi-mcp
 ```
 
-The extension adds the StrikerAPI MCP server (https://mcp.strikerapi.com/mcp) and sends the key in the `x-api-key` header. Get a free key (500 credits a month) at https://strikerapi.com/signup.
+The extension adds the StrikerAPI MCP server (https://mcp.strikerapi.com/mcp) and sends the key in the `x-api-key` header. Get a free key (500 credits a month) at https://strikerapi.com/signup.?utm_source=github&utm_medium=readme&utm_campaign=strikerapi-mcp
