@@ -120,6 +120,10 @@ node examples/node/quickstart.mjs
 
 See [`examples/README.md`](examples/README.md) for details. Get a free key (500 credits a month, no card) at https://strikerapi.com/signup?utm_source=github&utm_medium=readme&utm_campaign=strikerapi-mcp.
 
+## Starter projects
+
+- [soccer-xg-model](https://github.com/noahowsh/soccer-xg-model): fit your own expected-goals model from shot locations and grade it against StrikerAPI's xG, in one Python script.
+
 ## Use it in
 
 - **Claude, ChatGPT, Cursor, VS Code, Gemini CLI, Grok, Perplexity, Le Chat:** add `https://mcp.strikerapi.com/mcp` as a remote MCP server. Step-by-step for each: https://strikerapi.com/mcp?utm_source=github&utm_medium=readme&utm_campaign=strikerapi-mcp
